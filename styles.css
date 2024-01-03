@@ -1,0 +1,198 @@
+body {
+    background-color: #bfd7ff;
+}
+
+.clouds1 {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: moveClouds1 20s linear infinite, rotateClouds 30s linear infinite;
+}
+
+.clouds2 {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 50px;
+    left: -200px;
+    animation: moveClouds2 20s linear infinite, rotateClouds 40s linear infinite;
+}
+
+.clouds3 {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    top: 5px;
+    left: -400px;
+    animation: moveClouds3 20s linear infinite, rotateClouds 25s linear infinite;
+}
+
+.grass {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.sun {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    left: 100px;
+    top: 50px;
+    animation: rotateSun 10s linear infinite;
+}
+.flower1{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 100px;
+    top: 200px;
+}
+.flower2{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 100px;
+    top: 200px;
+}
+.flower3{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 100px;
+    top: 200px;
+}
+.flower4{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 100px;
+    top: 200px;
+}
+.flower5{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 100px;
+    top: 200px;
+}
+.flower6{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 100px;
+    top: 200px;
+}
+.tree1{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 940px;
+    top: 190px;
+    animation: swayTree 2s ease-in-out infinite alternate;
+}
+.floom {
+    left: 0;
+    right: 0;
+    font-size: 100px;
+    position: absolute;
+    margin-top: 200px;
+    text-align: center; 
+    font-family: 'Dancing Script', cursive; 
+    /* Center the text horizontally */
+}
+nav {
+    margin-top: 250px;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000; /* Adjust the z-index as needed */
+    text-align: center; /* Center align the links */
+}
+
+nav a {
+    font-family: cursive;
+    display: inline-block; /* Display links as inline blocks */
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Additional styles for hover state */
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.flower1, .flower2, .flower3, .flower4, .flower5, .flower6 {
+    animation: swayFlower .5s ease-in-out infinite alternate;
+}
+
+@keyframes swayFlower {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(20deg);
+    }
+}
+@keyframes swayTree {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes moveClouds1 {
+    0% {
+        transform: translateX(-300px);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+@keyframes moveClouds2 {
+    0% {
+        transform: translateX(-300px);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+@keyframes moveClouds3 {
+    0% {
+        transform: translateX(-300px);
+    }
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+@keyframes rotateClouds3 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateSun {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
